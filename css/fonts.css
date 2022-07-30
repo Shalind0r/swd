@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Jost:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../assets/fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/ProximaNova-Regular.woff") format("woff"), url("../assets/fonts/ProximaNova-Regular.ttf") format("truetype"), url("../assets/fonts/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../assets/fonts/Journal SansSerif Plain.eot");
+  src: local("☺"), url("../assets/fonts/Journal SansSerif Plain.woff") format("woff"), url("../assets/fonts/Journal SansSerif Plain.ttf") format("truetype"), url("../assets/fonts/Journal SansSerif Plain.svg") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/ProximaNova-Semibold.eot");
+  src: local("Proxima Nova Semibold"), local("ProximaNova-Semibold"), url("../assets/fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/ProximaNova-Semibold.woff") format("woff"), url("../assets/fonts/ProximaNova-Semibold.ttf") format("truetype"), url("../assets/fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Plain";
+  src: url("../assets/fonts/LitteraPlainRegular.eot");
+  src: local("☺"), url("../assets/fonts/LitteraPlainRegular.woff") format("woff"), url("../assets/fonts/LitteraPlainRegular.ttf") format("truetype"), url("../assets/fonts/LitteraPlainRegular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "jsMath-cmti10";
+  src: url("../assets/fonts/jsmath-cmti10.eot");
+  src: local("☺"), url("../assets/assets/fonts/jsmath-cmti10.woff") format("woff"), url("../assets/fonts/jsmath-cmti10.ttf") format("truetype"), url("../fonts/jsmath-cmti10.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Plain";
+  src: url("../assets/fonts/LitteraPlainLight.eot");
+  src: local("☺"), url("../assets/fonts/LitteraPlainLight.woff") format("woff"), url("../assets/fonts/LitteraPlainLight.ttf") format("truetype"), url("../assets/fonts/LitteraPlainLight.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
