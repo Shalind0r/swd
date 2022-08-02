@@ -227,6 +227,8 @@ body {
   height: 100vh;
   	-webkit-backface-visibility: hidden;
 		  backface-visibility: hidden;
+	 -webkit-transform: translate(0,0);
+  transform: translate(0,0);
 }
 @media (max-height: 550px) {
   .header__menu {
@@ -597,12 +599,16 @@ body {
   top: 550px;
   z-index: 5;
   pointer-events: all;
+	 -webkit-transform: translate(0,0);
+  transform: translate(0,0);
 }
 .header__arrow img {
   -webkit-transform: rotate(-44deg);
       -ms-transform: rotate(-44deg);
           transform: rotate(-44deg);
   height: 16px;
+	 -webkit-transform: translate(0,0);
+  transform: translate(0,0);
 }
 .header__arrow img:hover {
   border: 1px solid;
