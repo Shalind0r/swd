@@ -381,15 +381,6 @@ body {
   z-index: 10;
   position: fixed;
 }
-@media (max-height: 550px) {
-  .header__menu {
-    margin-top: 0;
-    top: 45%;
-  }
-  .header__mail {
-    margin-top: 50px !important;
-  }
-}
 .header__hamburger-menu #menu__toggle {
   opacity: 0;
 }
@@ -1475,5 +1466,14 @@ body {
 @media (max-width: 320px) {
   .globe-container {
     left: 19% !important;
+  }
+}
+@media (max-height: 550px) {
+  .header__menu {
+    margin-top: 0;
+    top: 45%;
+  }
+  .header__mail {
+    bottom: 60px !important;
   }
 }

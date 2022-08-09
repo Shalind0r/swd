@@ -14,7 +14,6 @@ document.addEventListener('click', (event) => {
       const target = event.target.closest(`.${CLASS_LIST.TRIGGER_OPEN}`);
       const modalId = target.getAttribute('href').replace('#', '');
       const modal = document.getElementById(modalId);
-
       document.body.style.overflow = 'hidden';
 
       modal.classList.add(CLASS_LIST.MODAL_ACTIVE);
@@ -28,8 +27,7 @@ document.addEventListener('click', (event) => {
       event.preventDefault();
       const modal = event.target.closest(`.${CLASS_LIST.MODAL}`);
       modal.classList.remove(CLASS_LIST.MODAL_ACTIVE);
-      document.body.style.overflow = '';
+      document.body.style.overflow = 'visible';
    }
 
 });
-

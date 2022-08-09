@@ -168,15 +168,6 @@ body {
       z-index: 10;
       position: fixed;
    }
-   @media (max-height: 550px) {
-      &__menu {
-         margin-top: 0;
-         top: 45%;
-      }
-      &__mail {
-         margin-top: 50px !important;
-      }
-   }
 
    &__hamburger-menu {
     
@@ -1042,5 +1033,16 @@ body {
 @media (max-width: 320px) {
    .globe-container {
       left: 19% !important;
+   }
+}
+@media (max-height: 550px) {
+   .header {
+      &__menu {
+         margin-top: 0;
+         top: 45%;
+      }
+   }
+   .header__mail {
+      bottom: 60px !important;
    }
 }
