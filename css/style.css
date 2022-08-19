@@ -143,8 +143,18 @@ a, input, label {
   font-weight: 300;
   font-style: normal;
 }
+html {
+  overflow: hidden;
+  width: 100%;
+}
+
 body {
   background-color: black;
+  height: 100%;
+  position: fixed;
+  /* prevent overscroll bounce*/
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .header {
