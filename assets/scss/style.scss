@@ -13,9 +13,17 @@ $maxWidth: 1280;
   }
 }
 
- 
+html{
+   overflow: hidden;
+   width: 100%;
+}
 body {
    background-color: black;
+   height: 100%;
+   position: fixed;
+   /* prevent overscroll bounce*/
+   overflow-y: scroll;
+   -webkit-overflow-scrolling: touch;
   
 }
 .header {
@@ -3064,11 +3072,6 @@ body {
             margin: 0;
          }
       }  
-      &__menu {
-         #menu__toggle:checked~.menu__btn {
-         }
-      }
-      
 
       &__social {
          margin-bottom: 50px;
