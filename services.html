@@ -6,14 +6,14 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
- <link rel="stylesheet" href="./css/services.css">
+   <link rel="stylesheet" href="./css/services.css">
 </head>
 
 <body>
-   <header class="header"  id="header">
+   <header class="header" id="header">
       <div class="header__top">
          <div class="header__logo">
-          <a href="./index.html"><img src="./image/header/SWD-white_300ppi 1.svg" alt=""></a>
+            <a href="./index.html"><img src="./image/header/SWD-white_300ppi 1.svg" alt=""></a>
          </div>
          <div class="header__number">
             <a href="tel:+380968858899">+38 096 885 88 99</a>
@@ -51,7 +51,7 @@
                <a href="#">Instagram</a>
                <a href="#">Facebook</a>
             </div>
-         </div>        
+         </div>
          <div class="header__arrow">
             <a href="#header">
                <img src="./image/header/Vector 4.svg" alt="">
@@ -70,7 +70,9 @@
                   <h3>Сайты под ключ</h3>
                </div>
                <div class="services__text">
-                  <a href="./portfolio.html#tab-1" target="_blank"><p>Любой вид сайта, за адекватные сроки, <br> с максимальной эффективностью.</p></a>
+                  <a href="./portfolio.html#tab-1" target="_blank">
+                     <p>Любой вид сайта, за адекватные сроки, <br> с максимальной эффективностью.</p>
+                  </a>
                </div>
             </div>
             <label for="1" class="services__dropdown">
@@ -101,7 +103,9 @@
                   <h3>Контекстная реклама </h3>
                </div>
                <div class="services__text advertising__text">
-                  <a href="/portfolio.html#tab-2" target="_blank"><p>Глубокий анализ ниши и конкурентов, <br> составление стратегии продвижения</p></a>
+                  <a href="/portfolio.html#tab-2" target="_blank">
+                     <p>Глубокий анализ ниши и конкурентов, <br> составление стратегии продвижения</p>
+                  </a>
                </div>
             </div>
             <label for="2" class="services__dropdown">
@@ -134,7 +138,7 @@
                <div class="services__text smm__text">
                   <a href="/portfolio.html#tab-3" target="_blank">
                      <p>Привлечение новых клиентов через <br> социальные сети и конкурсы</p>
-                  </a>   
+                  </a>
                </div>
             </div>
             <label for="3" class="services__dropdown">
@@ -166,8 +170,8 @@
                </div>
                <div class="services__text seo__text">
                   <a href="/portfolio.html#tab-4" target="_blank">
-                     <p>Tехническая поддержка и корректировка, <br> на всех этапах работы</p>                  
-                  </a> 
+                     <p>Tехническая поддержка и корректировка, <br> на всех этапах работы</p>
+                  </a>
                </div>
             </div>
             <label for="4" class="services__dropdown">
@@ -199,7 +203,7 @@
                </div>
                <div class="services__text feedback__text">
                   <a href="/portfolio.html#tab-5" target="_blank">
-                     <p>Tехническая поддержка и корректировка, <br> на всех этапах работы</p>                  
+                     <p>Tехническая поддержка и корректировка, <br> на всех этапах работы</p>
                   </a>
                </div>
             </div>
@@ -232,8 +236,8 @@
                </div>
                <div class="services__text anim-items">
                   <a href="/portfolio.html#tab-4" target="_blank">
-                     <p>Создание, продвижение и раскрутка <br> информационного портала</p>                  
-                  </a>               
+                     <p>Создание, продвижение и раскрутка <br> информационного портала</p>
+                  </a>
                </div>
             </div>
             <label for="6" class="services__dropdown">
@@ -413,10 +417,13 @@
          </div>
       </div>
       <div class="write-us__form">
-         <form action="#" method="post">
+         <form action="#" method="get">
             <div class="write-us__form_input">
-               <input tabindex="1" type="text" name="username" placeholder="Имя" required>
-               <input tabindex="2" type="tel" name="userphone" placeholder="Телефон" required>
+               <input tabindex="1" type="text" name="name" placeholder="Имя" required
+                  pattern="[а-яА-яa-zA-zа-щА-ЩЬьЮюЯяЇїІіЄєҐґ]+" title="Имя может содержать только буквы">
+               <input tabindex="2" type="tel" name="userphone" placeholder="Телефон" required
+                  pattern="[/^\+380\d{3}\d{2}\d{2}\d{2}$/]+" maxlength="13" minlength="13"
+                  title="Номер телефон в формате +380xxxxxxxxxx">
             </div>
             <div class="write-us__form_button">
                <button tabindex="3" type="submit">Подать заявку</button>
@@ -482,8 +489,8 @@
          </div>
       </div>
    </footer>
-  <script src="./js/animation-on_scroll.js"></script>
-  <script src="./js/add-class_on-click.js"></script>
+   <script src="./js/animation-on_scroll.js"></script>
+   <script src="./js/add-class_on-click.js"></script>
 </body>
 
 </html>

@@ -2672,7 +2672,7 @@ body {
 }
 .work__map svg path:hover {
   stroke-width: 1.5px;
-  stroke: rgb(0, 217, 255);
+  stroke: #00d9ff;
 }
 .work__item {
   font-family: "Jost";
@@ -2689,8 +2689,8 @@ body {
   left: 13%;
 }
 .work__item_2 {
-  top: 20%;
-  left: 50%;
+  top: 21%;
+  left: 52%;
 }
 .work__item_3 {
   top: 25%;
@@ -2699,10 +2699,6 @@ body {
 .work__item_4 {
   top: 36%;
   left: 74.5%;
-}
-.work__item_5 {
-  top: 10%;
-  left: 76.5%;
 }
 
 .write-us {
@@ -3300,8 +3296,8 @@ body {
     left: 12%;
   }
   .work__item_2 {
-    top: 25%;
-    left: 53%;
+    top: 26.5%;
+    left: 52%;
   }
   .work__item_3 {
     top: 30%;
@@ -3310,10 +3306,6 @@ body {
   .work__item_4 {
     top: 39%;
     left: 74.5%;
-  }
-  .work__item_5 {
-    top: 15%;
-    left: 77%;
   }
 }
 @media (max-width: 991px) {
@@ -3550,10 +3542,6 @@ body {
     top: 41%;
     left: 74.5%;
   }
-  .work__item_5 {
-    top: 19%;
-    left: 77%;
-  }
 }
 @media (max-width: 950px) {
   .work__border {
@@ -3694,7 +3682,7 @@ body {
   }
   .work__item_2 {
     top: 32%;
-    left: 50%;
+    left: 51.5%;
   }
   .work__item_3 {
     top: 38%;

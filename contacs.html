@@ -1138,10 +1138,13 @@
             </div>
          </div>
          <div class="write-us__form">
-            <form action="#" method="post">
+            <form action="#" method="get">
                <div class="write-us__form_input">
-                  <input tabindex="1" type="text" name="username" placeholder="Имя" required>
-                  <input tabindex="2" type="tel" name="userphone" placeholder="Телефон" required>
+                  <input tabindex="1" type="text" name="name" placeholder="Имя" required
+                     pattern="[а-яА-яa-zA-zа-щА-ЩЬьЮюЯяЇїІіЄєҐґ]+" title="Имя может содержать только буквы">
+                  <input tabindex="2" type="tel" name="userphone" placeholder="Телефон" required
+                     pattern="[/^\+380\d{3}\d{2}\d{2}\d{2}$/]+" maxlength="13" minlength="13"
+                     title="Номер телефон в формате +380xxxxxxxxxx">
                </div>
                <div class="write-us__form_button">
                   <button tabindex="3" type="submit">Подать заявку</button>

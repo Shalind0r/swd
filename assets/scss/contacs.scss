@@ -383,7 +383,12 @@ body {
             line-height: 17px;
             padding-bottom: 14px;
          }
-
+         input:invalid {
+            border-color: red;
+         }
+         input:not(:focus):invalid {
+            border-color: #f4f5f7;;
+         }
          & input:last-child {
             margin-bottom: 51px;
          }
@@ -435,8 +440,12 @@ body {
       }
       &_check {
          & input {
-            display: none;
-         }
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            margin-top: 10px;
+            margin-left: 5.5px;
+          }
       }
       &_check-fake {
          width: 21px;

@@ -1456,6 +1456,12 @@ body {
     font-size: calc(14px + 3 * (100vw / 1280));
   }
 }
+.write-us__form_input input:invalid {
+  border-color: red;
+}
+.write-us__form_input input:not(:focus):invalid {
+  border-color: #f4f5f7;
+}
 .write-us__form_input input:last-child {
   margin-bottom: 51px;
 }
@@ -1602,7 +1608,11 @@ body {
   }
 }
 .write-us__form_check input {
-  display: none;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin-top: 10px;
+  margin-left: 5.5px;
 }
 .write-us__form_check-fake {
   width: 21px;
