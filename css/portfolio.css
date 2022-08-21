@@ -410,7 +410,7 @@ html:root {
 .header__body img {
   width: 40% !important;
   position: absolute;
-  right: -10%;
+  right: -5%;
   top: 90%;
   -webkit-transition: 1.5s;
   -o-transition: 1.5s;
@@ -1343,12 +1343,12 @@ html:root {
 }
 @media (max-width: 767px) {
   .footer__right h4 {
-    font-size: calc(14px + 2 * ((100vw - 350px) / 1280));
+    font-size: calc(13px + 3 * ((100vw - 350px) / 1280));
   }
 }
 @media (min-width: 767px) {
   .footer__right h4 {
-    font-size: calc(14px + 2 * (100vw / 1280));
+    font-size: calc(13px + 3 * (100vw / 1280));
   }
 }
 .footer__right_links {
@@ -1379,12 +1379,12 @@ html:root {
 }
 @media (max-width: 767px) {
   .footer__right_links-body a {
-    font-size: calc(14px + 2 * ((100vw - 350px) / 1280));
+    font-size: calc(13px + 3 * ((100vw - 350px) / 1280));
   }
 }
 @media (min-width: 767px) {
   .footer__right_links-body a {
-    font-size: calc(14px + 2 * (100vw / 1280));
+    font-size: calc(13px + 3 * (100vw / 1280));
   }
 }
 .footer__right_nav {
@@ -1452,6 +1452,10 @@ html:root {
   .header__mail {
     margin-left: -5px;
   }
+  .portfolio {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
   .portfolio__tabs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1477,7 +1481,6 @@ html:root {
     padding: 5px;
   }
   .portfolio__tabs_content {
-    width: 85vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1502,14 +1505,13 @@ html:root {
             transition-delay: 800ms;
     opacity: 1;
   }
-  .write-us {
-    margin-left: 60px;
-    margin-right: 60px;
-  }
 }
 @media (max-width: 991px) {
   .header__arrow {
-    right: 0;
+    display: none;
+  }
+  .header__menu {
+    position: absolute;
   }
   .portfolio__tabs_content-element-wrapper img {
     width: 45vw;
@@ -1603,10 +1605,6 @@ html:root {
   .portfolio__tabs__modal_text {
     font-size: calc(14px + 4 * (100vw - 350px) / 1280);
   }
-  .footer {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
   .footer__logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1643,8 +1641,9 @@ html:root {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
   }
   .portfolio__tabs_triggers-item-wrapper {
@@ -1849,10 +1848,6 @@ html:root {
   }
 }
 @media (max-width: 400px) {
-  .portfolio {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
   .portfolio__tabs_triggers-container {
     margin-left: 20px;
   }
@@ -1904,10 +1899,6 @@ html:root {
   }
 }
 @media (max-width: 350px) {
-  .write-us {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
   .header #menu__toggle:checked ~ .menu__btn {
     margin-left: 280px;
   }
@@ -1933,17 +1924,10 @@ html:root {
     flex-direction: column;
     text-align: center;
   }
-  .write-us {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
   .write-us__form_button button {
     width: 250px;
   }
   .write-us__form_input input {
     width: 87%;
-  }
-  .footer {
-    margin-right: 0px;
   }
 }

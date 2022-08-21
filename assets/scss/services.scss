@@ -1265,7 +1265,7 @@ body {
 
       & h4 {
          font-family: "Jost";
-         @include adaptiv-font(16, 14);
+         @include adaptiv-font(16, 13);
          line-height: 20px;
          letter-spacing: 0.01em;
          color: #f6f6f6;
@@ -1290,7 +1290,7 @@ body {
 
          & a {
             font-family: "Jost";
-            @include adaptiv-font(16, 14);
+            @include adaptiv-font(16, 13);
             line-height: 23px;
             letter-spacing: 0.01em;
             color: #f6f6f6;
@@ -1343,21 +1343,21 @@ body {
          margin-left: -5px;
       }
    }
-   .for-clients {
-      margin-left: 40px;
-      margin-right: 40px;
-   }
+
 }
 
 @media (max-width: 991px) {
    .header {
       &__arrow {
-         right: 0;
+         display: none;
+      }
+      &__menu {
+         left: 5px;
+         position: absolute;
       }
    }
    .services {
-      margin-left: 60px;
-      margin-right: 60px;
+      max-width: 90vw;
    }
    .support {
       position: relative;
@@ -1393,8 +1393,7 @@ body {
    }
 
    .stage {
-      margin-left: 60px;
-      margin-right: 60px;
+      max-width: 90vw;
    }
 }
 
@@ -1430,7 +1429,7 @@ body {
       &__cube {
          & img {
             margin-top: 130px;
-            width: 40vw;
+            width: 30vw;
             opacity: 0.2 !important;
          }
 
@@ -1441,7 +1440,7 @@ body {
 
          & img:last-child {
             transition: 1s;
-            right: 21%;
+            right: 10% !important;
          }
       }
 
@@ -1534,9 +1533,6 @@ body {
    }
 
    .footer {
-      margin-left: 40px;
-      margin-right: 40px;
-
       &__logo {
          display: flex;
          justify-content: flex-end;
@@ -1648,9 +1644,6 @@ body {
 
 @media (max-width: 600px) {
    .stage {
-      margin-left: 30px;
-      margin-right: 30px;
-
       &__item {
          &_image {
             order: 3;
@@ -1720,9 +1713,6 @@ body {
 
 @media (max-width: 480px) {
    .support {
-      margin-right: 20px;
-      margin-left: 15px;
-
       &__img {
          margin-top: 100px;
          & img:first-child {
@@ -1761,9 +1751,6 @@ body {
       }
    }
    .stage {
-      margin-left: 40px;
-      margin-right: 10px;
-
       &__item {
          position: static;
          justify-content: space-between;
@@ -1798,7 +1785,6 @@ body {
       }
    }
    .services {
-      margin: 0 40px;
       margin-bottom: 150px;
       &__label {
          & h3 {
@@ -1820,9 +1806,6 @@ body {
 
 @media (max-width: 400px) {
    .services {
-      margin-right: 10px;
-      margin-left: 32px;
-
       &__label {
          & h3 {
             left: 20%;
@@ -1874,8 +1857,6 @@ body {
    }
 
    .write-us {
-      margin-left: 20px;
-      margin-right: 20px;
       &__form_button {
          & button {
             width: 290px;
@@ -1923,11 +1904,17 @@ body {
          display: none;
       }
    }
-   .write-us  {
-      margin-left: 30px;
-      margin-right: 30px;
-   }
-   .footer {
-      margin-right: 0px;
+   .write-us {
+      &__form_button {
+         & button {
+            width: 250px;
+         }
+      }
+
+      &__form_input {
+         & input {
+            width: 87%;
+         }
+      }
    }
 }

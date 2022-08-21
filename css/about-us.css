@@ -1731,12 +1731,12 @@ body {
 }
 @media (max-width: 767px) {
   .footer__right h4 {
-    font-size: calc(14px + 2 * ((100vw - 350px) / 1280));
+    font-size: calc(13px + 3 * ((100vw - 350px) / 1280));
   }
 }
 @media (min-width: 767px) {
   .footer__right h4 {
-    font-size: calc(14px + 2 * (100vw / 1280));
+    font-size: calc(13px + 3 * (100vw / 1280));
   }
 }
 .footer__right_links {
@@ -1767,12 +1767,12 @@ body {
 }
 @media (max-width: 767px) {
   .footer__right_links-body a {
-    font-size: calc(14px + 2 * ((100vw - 350px) / 1280));
+    font-size: calc(13px + 3 * ((100vw - 350px) / 1280));
   }
 }
 @media (min-width: 767px) {
   .footer__right_links-body a {
-    font-size: calc(14px + 2 * (100vw / 1280));
+    font-size: calc(13px + 3 * (100vw / 1280));
   }
 }
 .footer__right_nav {
@@ -1854,18 +1854,13 @@ body {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .about-us {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .write-us {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
 }
 @media (max-width: 991px) {
   .header__arrow {
-    right: 0%;
+    display: none;
+  }
+  .header__menu {
+    position: absolute;
   }
   .we img {
     width: 20vw;
@@ -2126,10 +2121,6 @@ body {
   .about-us__fourth-line p:last-child br {
     display: block;
   }
-  .footer {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
   .footer__logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2164,8 +2155,7 @@ body {
 @media (max-width: 700px) {
   .we {
     position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
+    max-width: 90vw;
   }
   .we br {
     display: none;
@@ -2257,9 +2247,6 @@ body {
   }
 }
 @media (max-width: 675px) {
-  .header__arrow {
-    right: -1%;
-  }
   .about-us__fourth-line {
     left: 5%;
     margin: 0;
@@ -2463,19 +2450,11 @@ body {
   }
 }
 @media (max-width: 400px) {
-  .about-us {
-    margin-left: 30px;
-    margin-right: 10px;
-  }
   .about-us__fourth-line p:last-child {
     padding-right: 170px;
   }
   .team__image_item.active {
     left: 17%;
-  }
-  .write-us {
-    margin-left: 20px;
-    margin-right: 20px;
   }
   .write-us__form_button button {
     width: 290px;
@@ -2554,8 +2533,10 @@ body {
               transform: rotate(0deg);
     }
   }
-  .footer {
-    margin-left: 30px;
-    margin-right: 0px;
+  .write-us__form_button button {
+    width: 250px;
+  }
+  .write-us__form_input input {
+    width: 87%;
   }
 }

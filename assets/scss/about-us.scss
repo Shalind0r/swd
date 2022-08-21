@@ -1118,7 +1118,7 @@ body {
 
       & h4 {
          font-family: "Jost";
-         @include adaptiv-font(16, 14);
+         @include adaptiv-font(16, 13);
          line-height: 20px;
          letter-spacing: 0.01em;
          color: #f6f6f6;
@@ -1143,7 +1143,7 @@ body {
 
          & a {
             font-family: "Jost";
-            @include adaptiv-font(16, 14);
+            @include adaptiv-font(16, 13);
             line-height: 23px;
             letter-spacing: 0.01em;
             color: #f6f6f6;
@@ -1207,19 +1207,14 @@ body {
    .we {
       justify-content: space-evenly;
    }
-   .about-us {
-      margin-left: 20px;
-      margin-right: 20px;
-   }
-   .write-us {
-      margin-left: 20px;
-      margin-right: 20px;
-   }
 }
 @media (max-width: 991px) {
    .header {
       &__arrow {
-         right: 0%
+        display: none;
+      }
+      &__menu {
+         position: absolute;
       }
    }
    .we {
@@ -1469,9 +1464,6 @@ body {
       }
    }
    .footer {
-      margin-left: 40px;
-      margin-right: 40px;
-
       &__logo {
          display: flex;
          justify-content: flex-end;
@@ -1506,8 +1498,7 @@ body {
 @media (max-width: 700px) {
    .we {
       position: relative;
-      margin-left: 20px;
-      margin-right: 20px;
+      max-width: 90vw;
       & br {
          display: none;
       }
@@ -1575,11 +1566,6 @@ body {
    }
 }
 @media (max-width: 675px)  {
-   .header {
-      &__arrow {
-         right: -1%;
-      }
-   }
    .about-us {
       &__fourth-line {
          left: 5%;
@@ -1808,9 +1794,6 @@ body {
 } 
 @media (max-width: 400px) {
    .about-us {
-      margin-left: 30px;
-      margin-right: 10px;
-
       &__fourth-line {
          & p:last-child {
             padding-right: 170px;
@@ -1826,8 +1809,6 @@ body {
       }
    }
    .write-us {
-      margin-left: 20px;
-      margin-right: 20px;
       &__form_button {
          & button {
             width: 290px;
@@ -1896,8 +1877,17 @@ body {
          }
       }
    }
-   .footer {
-      margin-left: 30px;
-      margin-right: 0px;
+   .write-us {
+      &__form_button {
+         & button {
+            width: 250px;
+         }
+      }
+
+      &__form_input {
+         & input {
+            width: 87%;
+         }
+      }
    }
 }
