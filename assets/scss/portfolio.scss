@@ -74,15 +74,6 @@ html:root {
       z-index: 10;
       position: fixed;
    }
-   @media (max-height: 550px) {
-      &__menu {
-         margin-top: 0;
-         top: 45%;
-      }
-      &__mail {
-         margin-top: 50px !important;
-      }
-   }
 
    &__hamburger-menu {
       #menu__toggle {
@@ -208,7 +199,7 @@ html:root {
       & p {
          font-family: "Josefin Sans";
          font-weight: 600;
-         @include adaptiv-font(135, 40);
+         @include adaptiv-font(135, 35);
          line-height: 120%;
          text-align: center;
          letter-spacing: 0.035em;
@@ -997,6 +988,9 @@ html:root {
       &__menu {
          position: absolute;
       }
+      &__mail {
+         display: none;
+      }
    }
    .portfolio {
       &__tabs {
@@ -1076,6 +1070,10 @@ html:root {
       }
       &__arrow {
          top: 55%;
+      }
+      .menu__btn {
+         position: absolute;
+         top: -50px;
       }
       &__menu {
          margin-right: 0;
@@ -1286,11 +1284,9 @@ html:root {
       &__body {
          right: 0%;
       }
-      &__menu {
-         margin-top: 125px;
-         
+      &__menu { 
          #menu__toggle:checked~.menu__btn {
-            top: -135px;
+            top: -160px;
          }
       }
    }

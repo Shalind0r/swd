@@ -56,15 +56,6 @@ body {
       z-index: 10;
       position: fixed;
    }
-   @media (max-height: 550px) {
-      &__menu {
-         margin-top: 0;
-         top: 45%;
-      }
-      &__mail {
-         margin-top: 50px !important;
-      }
-   }
 
    &__hamburger-menu {
     
@@ -73,7 +64,7 @@ body {
       }
 
       #menu__toggle:checked~.menu__btn {
-         top: -152px;
+         top: -160px;
          margin-left: 300px;
       }
 
@@ -1216,6 +1207,9 @@ body {
       &__menu {
          position: absolute;
       }
+      &__mail {
+         display: none;
+      }
    }
    .we {
       img {
@@ -1412,7 +1406,9 @@ body {
       &__logo {
          margin-top: 10px;
       }
-
+      .menu__btn {
+         top: -70px;
+      }
       &__number {
          flex-direction: column;
          justify-content: space-between;
@@ -1829,7 +1825,11 @@ body {
    }
 }
 @media (max-width: 350px) {
-   
+   .header {
+      #menu__toggle:checked~.menu__btn {
+         margin-left: 280px;
+      }
+   }
    .about-us {
 
 

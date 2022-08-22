@@ -216,20 +216,11 @@ body {
   z-index: 10;
   position: fixed;
 }
-@media (max-height: 550px) {
-  .header__menu {
-    margin-top: 0;
-    top: 45%;
-  }
-  .header__mail {
-    margin-top: 50px !important;
-  }
-}
 .header__hamburger-menu #menu__toggle {
   opacity: 0;
 }
 .header__hamburger-menu #menu__toggle:checked ~ .menu__btn {
-  top: -152px;
+  top: -160px;
   margin-left: 300px;
 }
 .header__hamburger-menu #menu__toggle:checked ~ .menu__btn > span {
@@ -1862,6 +1853,9 @@ body {
   .header__menu {
     position: absolute;
   }
+  .header__mail {
+    display: none;
+  }
   .we img {
     width: 20vw;
   }
@@ -2070,6 +2064,9 @@ body {
   }
   .header__logo {
     margin-top: 10px;
+  }
+  .header .menu__btn {
+    top: -70px;
   }
   .header__number {
     -webkit-box-orient: vertical;
@@ -2467,6 +2464,9 @@ body {
   }
 }
 @media (max-width: 350px) {
+  .header #menu__toggle:checked ~ .menu__btn {
+    margin-left: 280px;
+  }
   .about-us__fourth-line p:last-child {
     padding-right: 140px;
   }

@@ -225,15 +225,6 @@ html:root {
   z-index: 10;
   position: fixed;
 }
-@media (max-height: 550px) {
-  .header__menu {
-    margin-top: 0;
-    top: 45%;
-  }
-  .header__mail {
-    margin-top: 50px !important;
-  }
-}
 .header__hamburger-menu #menu__toggle {
   opacity: 0;
 }
@@ -389,12 +380,12 @@ html:root {
 }
 @media (max-width: 767px) {
   .header__body p {
-    font-size: calc(40px + 95 * ((100vw - 350px) / 1280));
+    font-size: calc(35px + 100 * ((100vw - 350px) / 1280));
   }
 }
 @media (min-width: 767px) {
   .header__body p {
-    font-size: calc(40px + 95 * (100vw / 1280));
+    font-size: calc(35px + 100 * (100vw / 1280));
   }
 }
 .header__body p.active {
@@ -1513,6 +1504,9 @@ html:root {
   .header__menu {
     position: absolute;
   }
+  .header__mail {
+    display: none;
+  }
   .portfolio__tabs_content-element-wrapper img {
     width: 45vw;
   }
@@ -1591,6 +1585,10 @@ html:root {
   }
   .header__arrow {
     top: 55%;
+  }
+  .header .menu__btn {
+    position: absolute;
+    top: -50px;
   }
   .header__menu {
     margin-right: 0;
@@ -1773,11 +1771,8 @@ html:root {
   .header__body {
     right: 0%;
   }
-  .header__menu {
-    margin-top: 125px;
-  }
   .header__menu #menu__toggle:checked ~ .menu__btn {
-    top: -135px;
+    top: -160px;
   }
   .menu__box {
     width: 100% !important;
