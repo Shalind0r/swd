@@ -1980,8 +1980,8 @@ body {
       border-image-slice: 1;
       border-image-source: linear-gradient(180deg, #eccc5a 0.98%, #e7b234 54.86%, #d2992d 100%);
       display: inline-block;
-      width: 9vw;
-      height: 20vh;
+      width: 100px;
+      height: 120px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -2038,8 +2038,8 @@ body {
       }
 
       &_2 {
-         top: 21%;
-         left: 52%;
+         top: 23.5%;
+         left: 53.5%;
       }
 
       &_3 {
@@ -2050,6 +2050,10 @@ body {
       &_4 {
          top: 36%;
          left: 74.5%;
+      }
+      &_5 {
+         top: 24%;
+         left: 45%;
       }
    }
 }
@@ -2415,8 +2419,37 @@ body {
 
    .work {
       &__border {
-         height: 15vh;
+         height: 18vh;
+         width: 80px;
       }
+      &__item {
+         font-size: 16px;
+
+         &_1 {
+            top: 23%;
+            left: 12%;
+         }
+
+         &_2 {
+            top: 26.5%;
+            left: 54.5%;
+         }
+
+         &_3 {
+            top: 35%;
+            left: 64%;
+         }
+
+         &_4 {
+            top: 39%;
+            left: 74.5%;
+         }
+         &_5 {
+            top: 28%;
+            left: 47%;
+         }
+      }
+      
    }
 }
 @media (max-width: 1200px) {
@@ -2434,35 +2467,33 @@ body {
          margin-left: -5px;
       }
    }
-
    .work {
       &__item {
-         font-size: 16px;
-
          &_1 {
-            top: 23%;
-            left: 12%;
+            top: 21%;
+            left: 14%;
          }
 
          &_2 {
-            top: 26.5%;
-            left: 52%;
+            top: 28%;
+            left: 54.5%;
          }
 
          &_3 {
-            top: 30%;
-            left: 64%;
+            top: 36%;
+            left: 65%;
          }
 
-         &_4 {
-            top: 39%;
-            left: 74.5%;
+         &_5 {
+            top: 29%;
+            left: 46%;
          }
       }
+      
    }
+ 
 }
-
-@media (max-width: 991px) {
+@media (max-width: 1100px) {
    .header {
       &__menu {
          left: 5px;
@@ -2478,7 +2509,108 @@ body {
          display: none;
       }
    }
+   .work {
+      height: 700px;
 
+      &__map {
+         display: none;
+      }
+   }
+
+   .globe-container,
+   .globe {
+      width: 200px;
+      height: 200px;
+   }
+
+   .globe-container {
+      position: relative;
+         left: 39%;
+      transform: scale(3);
+   }
+
+   .globe {
+      position: absolute;
+      top: 40%;
+   }
+
+   .globe-sphere {
+      background: url("../image/sphere.svg");
+
+   }
+
+   .globe-worldmap,
+   .globe-worldmap__item,
+   .globe-sphere{
+      position: absolute;
+      display: block;
+      margin: 0;
+   }
+
+   .globe-sphere{
+      left: 0;
+      top: 0;
+      width: 200px;
+      height: 200px;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+   }
+
+   .globe-worldmap {
+      left: 0;
+      top: 0;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 50%;
+      mask-image: radial-gradient(white, black);
+   }
+
+   .globe-worldmap__item {
+      left: 0;
+      top: 0;
+      width: 818px;
+      height: 200px;
+      overflow: visible;
+      background-image: url("../image/globe\ map.svg");
+      background-repeat: no-repeat;
+      background-size: 777px 250px;
+      perspective: 400px;
+      perspective-origin: 0 0;
+
+   }
+
+
+
+   .globe-worldmap.active .globe-worldmap__item {
+      background-position: 0px 0px;
+      -webkit-animation: spin 15s linear infinite;
+              animation: spin 15s linear infinite;
+      -webkit-animation-delay: 600ms;
+              animation-delay: 600ms;
+   }
+
+   @-webkit-keyframes spin {
+      from {
+         transform: translateX(-47.5%);
+      }
+
+      to {
+         transform: translateX(0);
+      }
+   }
+
+   @keyframes spin {
+      from {
+         transform: translateX(-47.5%);
+      }
+
+      to {
+         transform: translateX(0);
+      }
+   }
+}
+@media (max-width: 991px) {
    .services {
       max-width: 90vw;
    }
@@ -2668,67 +2800,6 @@ body {
       &__title {
          margin-left: 20px;
       }
-
-      &__border {
-         height: 13vh;
-      }
-
-      &__item {
-         &_1 {
-            top: 25%;
-            left: 12%;
-         }
-
-         &_2 {
-            top: 28%;
-            left: 53%;
-         }
-
-         &_3 {
-            top: 33%;
-            left: 64%;
-         }
-
-         &_4 {
-            top: 41%;
-            left: 74.5%;
-         }
-      }
-   }
-}
-
-@media (max-width: 950px) {
-   .work {
-      &__border {
-         height: 11vh;
-      }
-
-      &__item {
-         &_1 {
-            top: 28%;
-            left: 12%;
-         }
-
-         &_2 {
-            top: 30%;
-            left: 53%;
-         }
-
-         &_3 {
-            top: 38%;
-            left: 64%;
-         }
-
-         &_4 {
-            top: 41%;
-            left: 74.5%;
-         }
-
-         &_5 {
-            top: 24%;
-            left: 77%;
-         }
-      }
    }
 }
 
@@ -2849,37 +2920,6 @@ body {
       }
    }
 
-   .work {
-      &__item {
-         font-size: 14px;
-
-         &_1 {
-            top: 28%;
-            left: 12%;
-         }
-
-         &_2 {
-            top: 32%;
-            left: 51.5%;
-         }
-
-         &_3 {
-            top: 38%;
-            left: 64%;
-         }
-
-         &_4 {
-            top: 41%;
-            left: 74.5%;
-         }
-
-         &_5 {
-            top: 24%;
-            left: 77%;
-         }
-      }
-   }
-
    .footer {
       max-width: 90vw;
    }
@@ -2914,107 +2954,6 @@ body {
          &_square {
             right: 6%;
          }
-      }
-   }
-
-   .work {
-      height: 700px;
-
-      &__map {
-         display: none;
-      }
-   }
-
-   .globe-container,
-   .globe {
-      width: 200px;
-      height: 200px;
-   }
-
-   .globe-container {
-      position: relative;
-         left: 39%;
-      transform: scale(3);
-   }
-
-   .globe {
-      position: absolute;
-      top: 40%;
-   }
-
-   .globe-sphere {
-      background: url("../image/sphere.svg");
-
-   }
-
-   .globe-worldmap,
-   .globe-worldmap__item,
-   .globe-sphere{
-      position: absolute;
-      display: block;
-      margin: 0;
-   }
-
-   .globe-sphere{
-      left: 0;
-      top: 0;
-      width: 200px;
-      height: 200px;
-      background-position: 0 0;
-      background-repeat: no-repeat;
-   }
-
-   .globe-worldmap {
-      left: 0;
-      top: 0;
-      width: 200px;
-      height: 200px;
-      overflow: hidden;
-      border-radius: 50%;
-      mask-image: radial-gradient(white, black);
-   }
-
-   .globe-worldmap__item {
-      left: 0;
-      top: 0;
-      width: 818px;
-      height: 200px;
-      overflow: visible;
-      background-image: url("../image/globe\ map.svg");
-      background-repeat: no-repeat;
-      background-size: 777px 250px;
-      perspective: 400px;
-      perspective-origin: 0 0;
-
-   }
-
-
-
-   .globe-worldmap.active .globe-worldmap__item {
-      background-position: 0px 0px;
-      -webkit-animation: spin 15s linear infinite;
-              animation: spin 15s linear infinite;
-      -webkit-animation-delay: 600ms;
-              animation-delay: 600ms;
-   }
-
-   @-webkit-keyframes spin {
-      from {
-         transform: translateX(-47.5%);
-      }
-
-      to {
-         transform: translateX(0);
-      }
-   }
-
-   @keyframes spin {
-      from {
-         transform: translateX(-47.5%);
-      }
-
-      to {
-         transform: translateX(0);
       }
    }
 }
@@ -3752,7 +3691,7 @@ body {
       }
    }
    .globe-container {
-      left: 0% !important;
+      left: 5% !important;
    }
    .globe {
       left: 28% !important;
@@ -3833,4 +3772,9 @@ body {
       }
    }
 
+}
+@media (max-width: 330px) {
+   .globe-container {
+      left: 0% !important;
+   } 
 }
