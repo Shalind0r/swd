@@ -311,6 +311,7 @@ html:root {
 }
 .header__hamburger-menu .menu__item {
   position: relative;
+  left: 5px;
   display: inline-block;
   padding: 12px 24px;
   z-index: 3;
@@ -1504,9 +1505,6 @@ html:root {
   .header__menu {
     position: absolute;
   }
-  .header__mail {
-    display: none;
-  }
   .portfolio__tabs_content-element-wrapper img {
     width: 45vw;
   }
@@ -1593,6 +1591,11 @@ html:root {
   .header__menu {
     margin-right: 0;
     margin-left: 10px;
+  }
+  .header__mail {
+    margin: 0;
+    position: absolute;
+    top: 20px;
   }
   .portfolio__tabs_learning-carousel {
     width: 75vw;

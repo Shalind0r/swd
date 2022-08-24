@@ -2502,9 +2502,6 @@ body {
       .menu__btn {
          top: 250px;
       }
-      &__mail {
-        display: none;
-      }
       &__arrow {
          display: none;
       }
@@ -2974,7 +2971,9 @@ body {
             margin: 0;
          }
       }  
-
+      &__mail {
+         top: 350px;
+      }
       &__social {
          margin-bottom: 50px;
       }

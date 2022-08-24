@@ -157,6 +157,7 @@ body {
       }
 
       .menu__item {
+         left: 10px;
          position: relative;
          display: inline-block;
          padding: 12px 24px;
@@ -349,7 +350,7 @@ body {
 
       & p {
          font-family: "jost";
-         @include adaptiv-font(14, 13);
+         @include adaptiv-font(14, 12.5);
          line-height: 120%;
          color: #dbd7d7;
       }
@@ -1351,9 +1352,6 @@ body {
          left: 5px;
          position: absolute;
       }
-      &__mail {
-         display: none;
-      }
       #menu__toggle:checked~.menu__btn {
          top: -180px;
          margin-left: 300px;
@@ -1509,6 +1507,10 @@ body {
          margin-right: 0;
          margin-left: 10px;
        
+      }
+      &__mail {
+         top: 280px;
+         left: 5px;
       }
       .menu__btn {
          top: -40px;
@@ -1895,7 +1897,7 @@ body {
             display: none;
          }
 
-         width: 215px;
+         width: 228px;
       }
    }
    .support {

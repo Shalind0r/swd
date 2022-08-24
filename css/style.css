@@ -3310,9 +3310,6 @@ body {
   .header .menu__btn {
     top: 250px;
   }
-  .header__mail {
-    display: none;
-  }
   .header__arrow {
     display: none;
   }
@@ -3765,6 +3762,9 @@ body {
   .header__number a {
     margin-top: 1px;
     margin: 0;
+  }
+  .header__mail {
+    top: 350px;
   }
   .header__social {
     margin-bottom: 50px;

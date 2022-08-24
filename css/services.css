@@ -312,6 +312,7 @@ body {
           transition-duration: 0.25s;
 }
 .header__hamburger-menu .menu__item {
+  left: 10px;
   position: relative;
   display: inline-block;
   padding: 12px 24px;
@@ -568,12 +569,12 @@ body {
 }
 @media (max-width: 767px) {
   .services__text p {
-    font-size: calc(13px + 1 * ((100vw - 350px) / 1280));
+    font-size: calc(12.5px + 1.5 * ((100vw - 350px) / 1280));
   }
 }
 @media (min-width: 767px) {
   .services__text p {
-    font-size: calc(13px + 1 * (100vw / 1280));
+    font-size: calc(12.5px + 1.5 * (100vw / 1280));
   }
 }
 .services__dropdown_item {
@@ -1867,9 +1868,6 @@ body {
     left: 5px;
     position: absolute;
   }
-  .header__mail {
-    display: none;
-  }
   .header #menu__toggle:checked ~ .menu__btn {
     top: -180px;
     margin-left: 300px;
@@ -2015,6 +2013,10 @@ body {
   .header__menu {
     margin-right: 0;
     margin-left: 10px;
+  }
+  .header__mail {
+    top: 280px;
+    left: 5px;
   }
   .header .menu__btn {
     top: -40px;
@@ -2299,7 +2301,7 @@ body {
     margin-left: 280px;
   }
   .services__text {
-    width: 215px;
+    width: 228px;
   }
   .services__text br {
     display: none;

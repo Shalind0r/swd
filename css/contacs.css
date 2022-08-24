@@ -472,6 +472,7 @@ body {
 }
 .header__hamburger-menu .menu__item {
   position: relative;
+  left: 5px;
   display: inline-block;
   padding: 12px 24px;
   z-index: 3;
@@ -1093,11 +1094,6 @@ body {
     position: absolute;
   }
 }
-@media (max-width: 991px) {
-  .header__mail {
-    display: none;
-  }
-}
 @media (max-width: 890px) {
   .header__menu {
     margin-left: 5px !important;
@@ -1262,6 +1258,13 @@ body {
     margin-top: 1px;
     margin: 0;
   }
+  .header .menu__btn {
+    top: -80px;
+  }
+  .header__mail {
+    top: 270px;
+    left: 5px;
+  }
   .footer__logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1375,9 +1378,6 @@ body {
   }
   .header img {
     top: 27%;
-  }
-  .header .menu__btn {
-    top: -50px;
   }
   .header__connection {
     top: 50%;

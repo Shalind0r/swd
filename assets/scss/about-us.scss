@@ -1206,9 +1206,6 @@ body {
       &__menu {
          position: absolute;
       }
-      &__mail {
-         display: none;
-      }
    }
    .we {
       img {
@@ -1419,7 +1416,9 @@ body {
             margin: 0;
          }
       }
-
+      &__mail {
+         margin-top: 130px;
+      }
       &__social {
          width: 105%;
 

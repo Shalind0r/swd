@@ -254,6 +254,7 @@ body {
 
       .menu__item {
          position: relative;
+         left: 5px;
          display: inline-block;
          padding: 12px 24px;
          z-index: 3;
@@ -632,11 +633,6 @@ body {
       }
    }
 }
-@media (max-width: 991px) {
-   .header__mail {
-      display: none;
-   }
-}
 @media (max-width: 890px) {
    .header {
       &__menu {
@@ -790,6 +786,13 @@ body {
             margin: 0;
          }
       }
+      .menu__btn {
+         top: -80px;
+      }
+      &__mail {
+         top: 270px;
+         left: 5px;
+      }
    }
   
    .footer {
@@ -918,9 +921,6 @@ body {
       }
       & img {
          top: 27%;
-      }
-      .menu__btn {
-         top: -50px;
       }
       &__connection {
          top: 50%;

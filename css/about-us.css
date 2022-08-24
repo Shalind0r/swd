@@ -1853,9 +1853,6 @@ body {
   .header__menu {
     position: absolute;
   }
-  .header__mail {
-    display: none;
-  }
   .we img {
     width: 20vw;
   }
@@ -2084,6 +2081,9 @@ body {
   .header__number a {
     margin-top: 1px;
     margin: 0;
+  }
+  .header__mail {
+    margin-top: 130px;
   }
   .header__social {
     width: 105%;
