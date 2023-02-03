@@ -9,7 +9,7 @@ syntax for speeding up and ease of development,
 JavaScript for providing interactivity to elements,
 Connected and configured JavaScript plugins under project tasks
 
-After click this link <a href="shalind0r.github.io/swd/" target="_blank">shalind0r.github.io/swd/</a>  we see workin version my web-site
+After click this link <a href="https://shalind0r.github.io/swd/index.html" target="_blank">shalind0r.github.io/swd/</a>  we see workin version my web-site
 
 
                                                                                                                                   
